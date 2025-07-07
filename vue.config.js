@@ -5,8 +5,8 @@ module.exports = {
     config.plugins.delete('preload')
     config.plugins.delete('prefetch')
 
-    config.plugin('BundleAnalyzerPlugin')
-      .use(BundleAnalyzerPlugin, [{}])
+    // config.plugin('BundleAnalyzerPlugin')
+    //   .use(BundleAnalyzerPlugin, [{}])
   },
 
   css: {
