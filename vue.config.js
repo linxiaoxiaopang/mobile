@@ -1,4 +1,6 @@
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { ElementUiResolver } = require('unplugin-vue-components/resolvers')
+const ComponentsPlugin = require('unplugin-vue-components/webpack')
 
 module.exports = {
   chainWebpack: (config) => {
@@ -7,6 +9,16 @@ module.exports = {
 
     // config.plugin('BundleAnalyzerPlugin')
     //   .use(BundleAnalyzerPlugin, [{}])
+
+    // 添加 ComponentsPlugin
+    config.plugin('ComponentsPlugin')
+      .use(ComponentsPlugin({
+        resolvers: [ElementUiResolver()],
+        dirs: ['src/components/base'], // ✅ 你希望自动扫描的目录
+        directoryAsNamespace: true,
+        deep: true,
+        dts: false
+      }))
   },
 
   css: {

@@ -19,13 +19,8 @@
 </template>
 
 <script>
-import { Cascader } from 'element-ui'
 
 export default {
-  components: {
-    [Cascader.name]: Cascader
-  },
-
   data() {
     return {
       value: [],
