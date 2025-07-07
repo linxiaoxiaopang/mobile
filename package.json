@@ -12,19 +12,24 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "element-ui": "^2.13.2",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^8.0.2",
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-vue": "^7.9.0",
+    "eslint-plugin-vuefix": "^0.2.1",
     "sass": "^1.32.6",
     "sass-loader": "^10.1.1",
     "unplugin-vue-components": "^0.24.1",
@@ -43,7 +48,7 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "babel-eslint"
     },
     "rules": {}
   },
