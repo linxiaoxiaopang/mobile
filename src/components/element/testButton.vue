@@ -1,5 +1,10 @@
 <template>
-  <el-button type="primary">{{ msg }}</el-button>
+  <div>
+    <div class="bg">
+      <span>456</span>
+    </div>
+    <el-button type="primary">{{ msg }}</el-button>
+  </div>
 </template>
 
 <script>
@@ -20,5 +25,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.bg {
+  span {
+    background: red;
+  }
+}
 </style>
