@@ -1,6 +1,7 @@
 <template>
   <div>
     <span>{{ name }}</span>
+    <span>{{ $t('page.topic.banner.title') }}</span>
     <TestButton/>
     <GetButton/>
   </div>
