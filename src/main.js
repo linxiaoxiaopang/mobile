@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 
 Vue.config.productionTip = false
 
@@ -11,5 +12,6 @@ import lang from 'element-ui/lib/locale/lang/en'  // 英文
 locale.use(lang)
 
 new Vue({
+  router,
   render: h => h(App)
 }).$mount('#app')

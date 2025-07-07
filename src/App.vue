@@ -1,24 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <TestButton />
-    <GetButton />
-<!--    <TestCascader />-->
+    <router-link to="/">首页</router-link>
+    <router-link to="/demo">demo</router-link>
+    <router-view />
   </div>
 </template>
 
 <script>
-import TestButton from './components/element/testButton'
-import GetButton from './components/lodash/getButton'
-// import TestCascader from './components/element/testCascader'
 
 export default {
-  name: 'App',
-  components: {
-    TestButton,
-    GetButton,
-    // TestCascader
-  }
+  name: 'App'
 }
 </script>
 
