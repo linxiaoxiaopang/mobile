@@ -7,8 +7,11 @@ module.exports = {
     config.plugins.delete('preload')
     config.plugins.delete('prefetch')
 
-    // config.plugin('BundleAnalyzerPlugin')
-    //   .use(BundleAnalyzerPlugin, [{}])
+    //查看打包面板
+    if(process.env.LOOK_BUNDLE_PANEL) {
+      config.plugin('BundleAnalyzerPlugin')
+        .use(BundleAnalyzerPlugin, [{}])
+    }
 
     // 添加 ComponentsPlugin
     config.plugin('ComponentsPlugin')
